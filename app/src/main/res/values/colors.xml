@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="turq" type="color">#FFA2D7D8</item>
+    <item name="aqua" type="color">#FFBFE1BF</item>
+    <item name="our_grey" type="color">#FFEDEDEA</item>
+    <item name="orange" type="color">#FFFCD059</item>
+    <item name="red" type="color">#FFDE5842</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/turq</item>
+        <item>@color/aqua</item>
+        <item>@color/our_grey</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+    </integer-array>
+
+</resources>

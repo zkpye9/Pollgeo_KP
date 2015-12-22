@@ -1,0 +1,74 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFEDEDEA" >
+
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id="@+id/profilePicture"
+        android:gravity="center"
+        android:layout_below="@+id/scoreText"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textSize="30sp"
+        android:id="@+id/profileName"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/scoreText"
+        android:layout_below="@+id/profileName"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_below="@+id/profilePicture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/slider"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#FFDE5842"
+        android:layout_gravity="start">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:layout_gravity="top"
+            android:id = "@+id/thumbnail"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content">
+        </com.facebook.login.widget.ProfilePictureView>
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below = "@+id/thumbnail"
+            android:background="#FFDE5842"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

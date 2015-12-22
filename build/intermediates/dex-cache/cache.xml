@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/zkp/AndroidStudioProjects/Pollgeo/app/build/intermediates/exploded-aar/Pollgeo/ParseUI-Login/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a70df4002763d2ba8844b20b7c38a87b9ebfac6d">
+        <dex dex="/Users/zkp/AndroidStudioProjects/Pollgeo/app/build/intermediates/pre-dexed/debug/classes-75fcf86c6e77400c3f79a34e2377cecbf4987178.jar" />
+    </item>
+
+</items>

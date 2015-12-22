@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:background="@drawable/poll_title_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFDE5842"
+        android:text="Poll Title"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:id="@+id/option1button"
+        android:background="@drawable/circle_blank"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/option1"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:maxLength="25"
+        android:maxLines="2"
+        android:textColor="#FFDE5842"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_alignBottom="@+id/option1button"
+        android:layout_toLeftOf="@+id/votes1"
+        android:layout_toRightOf="@+id/option1button"
+        android:layout_toEndOf="@+id/option1button"
+        android:layout_alignTop="@+id/option1button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/option2"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:maxLength="25"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:textColor="#FFDE5842"
+        android:paddingTop="6dp"
+        android:layout_alignBottom="@+id/option2button"
+        android:layout_toRightOf="@+id/option2button"
+        android:layout_toLeftOf="@+id/votes2"
+        android:layout_toStartOf="@+id/votes2"
+        android:layout_below="@+id/option1button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:id="@+id/option2button"
+        android:background="@drawable/circle_blank"
+        android:layout_below="@+id/option1button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/option3"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:maxLength="25"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingTop="11dp"
+        android:textColor="#FFDE5842"
+        android:layout_alignBottom="@+id/option3button"
+        android:layout_toRightOf="@+id/option3button"
+        android:layout_toLeftOf="@+id/votes3"
+        android:layout_toStartOf="@+id/votes3"
+        android:layout_below="@+id/option2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:id="@+id/option3button"
+        android:background="@drawable/circle_blank"
+        android:layout_below="@+id/option2button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/option4"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:maxLength="25"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingTop="11dp"
+        android:textColor="#FFDE5842"
+        android:layout_alignBottom="@+id/option4button"
+        android:layout_toRightOf="@+id/option4button"
+        android:layout_toLeftOf="@+id/votes4"
+        android:layout_toStartOf="@+id/votes4"
+        android:layout_below="@+id/option3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:id="@+id/option4button"
+        android:background="@drawable/circle_blank"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/option3button"
+        android:layout_toLeftOf="@+id/option3"
+        android:layout_toStartOf="@+id/option3"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1,000"
+        android:id="@+id/votes1"
+        android:paddingRight="5dp"
+        android:paddingTop="9dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#FFDE5842"
+        android:layout_above="@+id/option2button"
+        android:layout_toRightOf="@+id/option2"
+        android:layout_alignRight="@+id/votes3"
+        android:layout_alignEnd="@+id/votes3"
+        android:layout_alignTop="@+id/option1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1,000"
+        android:paddingRight="5dp"
+        android:paddingTop="12dp"
+        android:id="@+id/votes2"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#FFDE5842"
+        android:layout_toRightOf="@+id/option3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/option3button"
+        android:layout_below="@+id/option1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1,000"
+        android:id="@+id/votes3"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="12dp"
+        android:textColor="#FFDE5842"
+        android:layout_alignTop="@+id/option3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/option4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1,000"
+        android:paddingRight="5dp"
+        android:paddingTop="12dp"
+        android:id="@+id/votes4"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#FFDE5842"
+        android:layout_alignTop="@+id/option4"
+        android:layout_alignRight="@+id/votes3"
+        android:layout_alignEnd="@+id/votes3"
+        android:layout_toEndOf="@+id/option3"
+        android:layout_toRightOf="@+id/option3"
+        android:layout_above="@+id/pieChart" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pieChart"
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:longClickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fb_share_button" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/barChart"
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:longClickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fb_share_button" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pollDelete"
+        android:src="@drawable/delete_button"
+        android:paddingRight="1dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/delete_icon_box"
+        android:layout_above="@+id/pieChart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_share_button"
+        android:layout_below="@+id/option4button"
+        android:layout_alignLeft="@+id/option4button"
+        android:layout_alignStart="@+id/option4button"
+        android:src="@drawable/fb_icon"
+        android:background="#80FFFFFF"/>
+
+
+</RelativeLayout>

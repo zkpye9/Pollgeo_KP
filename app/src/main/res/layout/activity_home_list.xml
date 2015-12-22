@@ -1,0 +1,92 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFEDEDEA" >
+
+        <app:android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="top"
+            android:background="#FFDE5842"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <com.baoyz.widget.PullRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="left|top">
+
+
+            <ListView
+                android:paddingTop="0dp"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:background="#FFEDEDEA"
+                />
+        </com.baoyz.widget.PullRefreshLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slider"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#FFDE5842"
+        android:layout_gravity="start">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:layout_gravity="top"
+            android:id = "@+id/thumbnail"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="5dp">
+        </com.facebook.login.widget.ProfilePictureView>
+
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below = "@+id/thumbnail"
+            android:background="#FFDE5842"
+            android:choiceMode="singleChoice"
+            android:divider="#d96656"
+            android:dividerHeight="2dp"/>
+
+        <Button
+            android:id="@+id/logOutButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Log out"/>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

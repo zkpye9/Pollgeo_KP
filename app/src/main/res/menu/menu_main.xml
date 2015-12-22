@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="ndejaco.pollgeo.LocalHomeListActivity">
+
+
+    <item
+        android:id="@+id/create_poll"
+        android:title="Create Poll"
+        android:icon="@drawable/create"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+
+</menu>

@@ -1,0 +1,133 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="ndejaco.pollgeo.MakeGroupActivity"
+    android:background="#FFEDEDEA">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#FFDE5842"
+        android:text="Name your Group"
+        android:textColor="#FFEDEDEA"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/textView"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_marginTop="7dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupName"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/createGroupButton"
+        android:background="@drawable/button_border"
+        android:textColor="#FFEDEDEA"
+        android:layout_below="@+id/groupName"
+        android:layout_alignRight="@+id/groupName"
+        android:layout_alignEnd="@+id/groupName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:paddingTop = "30dp"
+        android:paddingBottom = "30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/photoButton"
+        android:layout_below="@+id/createGroupButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:id="@+id/finishButton"
+        android:background="@drawable/button_border"
+        android:textColor="#FFEDEDEA"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:shadowColor="#000000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="2.0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Photo"
+        android:id="@+id/photoButton"
+        android:background="@drawable/button_border"
+        android:textColor="#FFEDEDEA"
+        android:layout_above="@+id/finishButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       />
+
+
+</RelativeLayout>
+
+<RelativeLayout
+android:id="@+id/slider"
+android:layout_width="240dp"
+android:layout_height="match_parent"
+android:background="#FFDE5842"
+android:layout_gravity="start">
+
+<com.facebook.login.widget.ProfilePictureView
+    android:layout_gravity="top"
+    android:id = "@+id/thumbnail"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content">
+</com.facebook.login.widget.ProfilePictureView>
+
+
+<ListView
+    android:id="@+id/left_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below = "@+id/thumbnail"
+    android:background="#FFDE5842"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0dp"/>
+
+</RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

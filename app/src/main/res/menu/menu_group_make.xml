@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:context="ndejaco.pollgeo.GroupActivity">
+
+
+        <item
+            android:id="@+id/create_group"
+            android:title="Create group"
+            android:icon="@drawable/group"
+            android:orderInCategory="1"
+            app:showAsAction="always" />
+
+
+
+</menu>
